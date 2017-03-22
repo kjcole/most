@@ -65,7 +65,7 @@ static void page_right_cmd (void)
 {
    int n = 1;
    if (Most_Digit_Arg != (int *) NULL) n = *Most_Digit_Arg;
-   Most_Column = Most_Column + n * 59;
+   Most_Column = Most_Column + n * 20;
    most_update_windows(Most_C_Line);
 }
 
@@ -73,7 +73,7 @@ static void page_left_cmd(void)
 {
    int n = 1;
    if (Most_Digit_Arg != (int *) NULL) n = *Most_Digit_Arg;
-   Most_Column = Most_Column - n * 59;
+   Most_Column = Most_Column - n * 20;
    most_update_windows(Most_C_Line);
 }
 
